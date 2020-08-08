@@ -4,7 +4,7 @@ import tqdm
 
 
 def runOfflineProcessor(source: str, dest: str):
-    command = f"./offline_processor {source} {dest}.json"
+    command = f"/bin/bash -c \"./offline_processor '{source}' '{dest}.json'\""
     print(command)
     os.system(command)
 
